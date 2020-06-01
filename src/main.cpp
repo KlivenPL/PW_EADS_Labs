@@ -1,26 +1,27 @@
 #include <iostream>
-#include "../include/RingAddOperationsTests.h"
-#include "../include/RingGetOperationsTests.h"
-#include "../include/RingRemoveOperationsTests.h"
-#include "../include/RingOtherOperationsTests.h"
+#include "../include/DictionaryTests.h"
 
 int main() {
+    std::cout << "Testing Dictionary" << std::endl;
+    auto dictionaryTests = DictionaryTests();
+    std::cout << dictionaryTests.RunTests();
 
-    std::cout << "Testing Get operations" << std::endl;
-    auto ringGetOperationsTests = RingGetOperationsTests();
-    std::cout << ringGetOperationsTests.RunTests();
+   /* std::cout << "Testing Get operations" << std::endl;
+    auto dictionaryGetOperationsTests = DictionaryGetOperationsTests();
+    std::cout << dictionaryGetOperationsTests.RunTests();
 
     std::cout << std::endl << "Testing Add operations" << std::endl;
-    auto ringAddOperationsTests = RingAddOperationsTests();
-    std::cout << ringAddOperationsTests.RunTests();
+    auto dictionaryAddOperationsTests = DictionaryTests();
+    std::cout << dictionaryAddOperationsTests.RunTests();
 
     std::cout << std::endl << "Testing Remove operations" << std::endl;
-    auto ringRemoveOperationsTests = RingRemoveOperationsTests();
-    std::cout << ringRemoveOperationsTests.RunTests();
+    auto dictionaryRemoveOperationsTests = DictionaryRemoveOperationsTests();
+    std::cout << dictionaryRemoveOperationsTests.RunTests();
 
     std::cout << std::endl << "Testing Other operations" << std::endl;
-    auto ringOtherOperationsTests = RingOtherOperationsTests();
-    std::cout << ringOtherOperationsTests.RunTests();   // this test contains dynamic allocation tests as well
+    auto dictionaryOtherOperationsTests = DictionaryOtherOperationsTests();
+    std::cout << dictionaryOtherOperationsTests.RunTests();   // this test contains dynamic allocation tests as well
+*/
 
     return 0;
 }
